@@ -55,7 +55,7 @@ a {
 /* Header */
 #header {
   max-size: 100%;
-  background-image: url("file://resources/images/cactus.jpg");
+  background-image: url("file://images/cactus.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@ a {
 
 @media only screen and (max-width: 700px) {
   #header {
-   background-image: url("file://resources/images/cactus-mobile.jpg");
+   background-image: url("file://images/cactus-mobile.jpg");
   min-height: 10rem;
   max-height: 10rem;
   padding-top: 65vh;
