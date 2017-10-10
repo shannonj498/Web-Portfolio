@@ -1,0 +1,334 @@
+html,
+body {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2D2D2D;
+}
+
+a {
+  color: black;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-bar {
+    text-align: center;
+  }
+}
+
+.nav-bar span {
+  margin: 55px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-right: 3rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-bar span {
+    margin: 0;
+    padding: 1.5rem;
+  }
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #421E98;
+  color: white;
+}
+
+.nav-bar a:hover {
+  opacity: 0.5;
+}
+
+/* Header */
+#header {
+  max-size: 100%;
+  background-image: url("file:///Users/shannon/Desktop/portfolio/resources/images/cactus.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  min-height: 55vh;
+  padding-top: 45vh;
+  text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+  #header {
+   background-image: url("file:///Users/shannon/Desktop/portfolio/resources/images/cactus-mobile.jpg");
+  min-height: 10rem;
+  max-height: 10rem;
+  padding-top: 65vh;
+  }
+}
+
+.header-text {
+  margin-left: 2rem;
+  width: 45rem;
+  text-align: center;
+  line-height: 1.1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .header-text {
+    margin: 0;
+    margin-top: -25rem;
+    max-width: 100%;
+    line-height: .7rem;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+  }
+}
+
+#header h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  #header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#header p {
+  font-size: 1.7rem;
+  font-weight: 100;
+  color: #5B5B5B;
+}
+
+@media only screen and (max-width: 700px) {
+  #header p {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* Portfolio */
+#portfolio {
+  margin-top: -2rem;
+}
+
+.project-white, .project-gray {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .project-white, .project-gray {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+}
+
+.project-white {
+  background-color: white;
+}
+
+.project-gray {
+  background-color: #EEEEEE;
+}
+
+.project-text {
+  width: 40%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5rem; 0;
+  height: 15rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .project-text {
+    width: 80%;
+    padding: 0;
+    height: auto;
+  }
+}
+
+#portfolio img {
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-left: 10rem;
+  width: 36rem;
+  box-shadow: 2px 2px 7px #5A5A5A;
+  border-radius: 3px;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  #portfolio {
+    text-align: center;
+  }
+  #portfolio img {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 80%;
+    margin: 2rem 0;
+  }
+  .description {
+    padding-top: 1rem;
+  }
+}
+
+#portfolio img:hover {
+  box-shadow: 0px 0px 16px #464545;
+}
+
+.built-with{
+  color: #84B69F;
+  margin-top: -0.8rem;
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+.title a:hover {
+  opacity: 0.5;
+}
+
+#portfolio i {
+  padding-right: .4rem;
+  padding-bottom: .5rem;
+}
+
+/* Contact Info */
+#contact {
+  background-color: white;
+  height: 33rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.contact-title {
+  line-height: .8rem;
+  padding-bottom: 3rem;
+}
+
+#contact h1{
+  font-size: 2rem;
+}
+
+.contact-title p {
+  font-size: 1.3rem;
+}
+
+.button {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-buttons a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #4D4D4D;
+}
+
+.contact-buttons a:hover {
+  background-color: #202020;
+  box-shadow: 0px 0px 10px black;
+  color: white;
+  border: 3px solid white;
+  transition-property: background-color, color, border, box-shadow;
+  transition-duration: .4s;
+}
+
+.contact-buttons {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-buttons {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-buttons a {
+    margin: .5rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: black;
+}
+
+#footer-info {
+  display: flex;
+  width: 45%;
+  justify-content: space-around;
+  margin: 0 auto;
+  color: white;
+  padding-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.footer-content span {
+  padding-left: .5rem;
+  font-size: 1.1rem;
+}
+
+#footer-copy {
+  color: #9C9C9C;
+  margin-bottom: -1rem;
+  text-align: center;
+  padding-bottom: .5rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  #footer-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-content {
+    padding: 0;
+    margin-bottom: 0.7rem;
+  }
+}
